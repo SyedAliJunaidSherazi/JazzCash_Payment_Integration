@@ -23,65 +23,87 @@ This repository contains a Flutter project with integrated payment functionality
 
 First, clone this repository to your local machine:
 
-Set Up Your Flutter Environment
+```bash
+git clone https://github.com/yourusername/jazzcash-payment-integration.git
+cd jazzcash-payment-integration
+```
+### 2. Set Up Your Flutter Environment
 Make sure you have Flutter installed and set up. Navigate to the project directory and get the Flutter dependencies:
 
-bash
-Copy code
+#### Copy code
+```bash
 flutter pub get
-Configure Android
-Update Native Code
-Navigate to android/app/src/main/java/com/yourcompany/yourapp/PaymentActivity.java and replace the placeholder URLs with JazzCash's sandbox or production URLs in your native code.
+```
+### 3. Configure Android
+Update Native Code:
 
-Update AndroidManifest.xml
+Navigate to android/app/src/main/java/com/yourcompany/yourapp/PaymentActivity.java.
+Replace the placeholder URLs with JazzCash's sandbox or production URLs in your native code.
+Update AndroidManifest.xml:
+
 Add necessary permissions and configurations to android/app/src/main/AndroidManifest.xml.
 
-Add Dependencies
+#### Add Dependencies:
+
 Ensure that the necessary dependencies for JazzCash payment are added to android/app/build.gradle.
 
-Configure iOS
-Update Native Code
-Navigate to ios/Runner/AppDelegate.swift and ios/Runner/PaymentViewController.swift. Replace the placeholder URLs with JazzCash's sandbox or production URLs in your native code.
+### 4. Configure iOS
 
-Update Info.plist
+Update Native Code:
+
+Navigate to ios/Runner/AppDelegate.swift and ios/Runner/PaymentViewController.swift.
+Replace the placeholder URLs with JazzCash's sandbox or production URLs in your native code.
+
+#### Update Info.plist:
+
 Add required permissions and URL schemes to ios/Runner/Info.plist.
 
-Add Dependencies
+#### Add Dependencies:
+
 Ensure that necessary dependencies are added to Podfile.
 
-Run the App
+### 5. Run the App
 To run the app on Android or iOS, use the following commands:
 
-Android
-bash
+#### Android:
+
+
 Copy code
+```bash
 flutter run
-iOS
-bash
+```
+#### iOS:
+
+
 Copy code
+```bash
 flutter run
-Usage
+```
+## Usage
+
 Initiate Payment: Use the Flutter method channel to initiate the payment process. Example usage can be found in the provided sample code.
 
-Contributing
+## Contributing
+
 If you wish to contribute to this project, please fork the repository and create a pull request with your changes. Make sure to follow the coding standards and include tests where applicable.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+## Acknowledgments
 JazzCash for providing the payment gateway.
 Flutter team for the cross-platform framework.
-Contact
-For any questions or support, please reach out to your-email@example.com.
 
-Author
-Syed Ali Junaid
-Github Profile
-Article
+## Contact
+For any questions or support, please reach out to iamsyedalijunaid@gmail.com.
 
-Co-Author
-Arslan Mirza
-Medium Profile
+## Author
 
+Syed Ali Junaid  
+[GitHub Profile](https://github.com/SyedAliJunaidSherazi)  
+[Related Article](https://medium.com/@iamsyedalijunaid/jazzcash-credit-debit-card-payment-integration-for-ios-and-android-a-comprehensive-guide-ea63d265d8f8)
 
+### Co-Author
+
+Arslan Mirza  
+[Medium Profile](https://medium.com/@charslanmirza)
